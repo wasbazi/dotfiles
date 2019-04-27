@@ -12,7 +12,9 @@ ZSH_THEME="asimple"
 # Don't forget to install zsh-syntax-highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 
-plugins=(brew docker zsh-syntax-highlighting autojump)
+plugins=(brew docker zsh-syntax-highlighting autojump zsh-autosuggestions)
 
 # This has to be after plugins, just trust me
 source $ZSH/oh-my-zsh.sh
+
+bindkey '^ ' autosuggest-accept
